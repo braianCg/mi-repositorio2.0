@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
@@ -11,47 +11,44 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg--body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./contactanoss.html">Contactanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./seguros.html">Seguros</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./contactanoss.html">Contratar</a>
+                    <a class="nav-link" href="./servicios.html">Bodegas</a>
+                    <a class="nav-link" href="./seguros.html">Seguros</a>
+                    <a class="nav-link" href="./donde-nos-encontramos.html">Donde nos encontramos</a>
+                    <a class="nav-link disabled" aria-disabled="true">Luvakena</a>
+                </div>
             </div>
         </div>
     </nav>
-    <div header2>
+    <div header>
         <div>
             <h1 class="title2">Luvakena. Ubicaciones</h1>
         </div>
         <section>
             <div>
-                <div class="container33">
-                    <div class="box-1">
+                <div class="container">
+                    <div class="col">
                         <h2 class="title2">Nos encontramos en zona centro, cerca de shopping Alto Noa</h2>
                         <img src="../assets/img/Captura de pantalla 2024-06-03 190700.png" alt="ubicacion zona Sur">
                     </div>
 
-                    <div class="box-1">
+                    <div class="col">
                         <h2 class="title2">Tambien tenemos nuestras oficinas en zona Norte sobre Avenida San Martin °123
                         </h2>
                         <img src="../assets/img/Captura de pantalla 2024-06-03 190718.png" alt="ubicacionzona centro">
                     </div>
 
-                    <div class="box-1">
+                    <div class="col">
                         <h2 class="title2">Podes visitar nuestros locales en zona Sur, al costado YPF</h2>
                         <img src="../assets/img/Captura de pantalla 2024-06-03 190732.png" alt="ubicacion zona Sur">
                     </div>
@@ -60,6 +57,13 @@
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <footer class="text-center py-3">
+        &copy; 2024 Luvakenaoficial/Blp Todos los derechos reservados.
+    </footer>
+</body>
 </body>
 
 </html>

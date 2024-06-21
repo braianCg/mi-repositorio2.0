@@ -1,130 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-<style>
-    body {
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form {
-    padding: 50px 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-}
-
-.cuestionario {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-}
-
-h2 {
-    color: black;
-    font-size: 35px;
-}
-
-label {
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-
-}
-
-input,
-textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: #a6aca7;
-    border: 2px solid #f0faf1;
-    color: #6c6c6c;
-    outline: none;
-
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: #ffffff;
-}
-
-.form-txt {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.form-txt a {
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.btn6 {
-    font-size: 16px;
-    color: #ffffff;
-    border: 0;
-    border-radius: 25px;
-    background-color: black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-
-}
-
-.btn6:hover {
-    background-color: grey;
-}
-
-@media(max-width:991px) {
-    body {
-        padding: 30px;
-    }
-
-    form {
-        padding: 50px 30px;
-        width: 100%;
-    }
-
-    input {
-        padding: 15px;
-    }
-}
-</style>
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Cuestionario</title>
+</head>
 <body>
-    <div>
-        <form>
-            <h2>Contacto</h2>
-            <div class="cuestionario">
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
-                <label for="phone">Telefono</label>
-                <input type="telefono" name="phone" id="phone" placeholder="Telefono">
-                <label for="email">Email</label>
-                <input type="email" name="Email" id="email" placeholder="E-mail">
-                <label for="Message"></label>
-                <textarea name="Mensaje" id="Mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                <div class="form-txt">
-                    <a href="#">Politica de privacidad</a>
-                    <a href="#">Terminos y condiciones</a>
-                </div>
-                <input class="btn6" type="submit" value="Enviar">
+    <div class="container">
+        <h1>Cuestionario</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label>Género:</label>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino" required>
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
         </form>
     </div>
-</body>
+    <footer class="text-center py-3">
+        &copy; 2024 Luvakenaoficial/Blp Todos los derechos reservados.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+</body>
 </html>
